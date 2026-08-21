@@ -1,0 +1,6 @@
+{
+  "name": "The Spice Table",
+  "description": "Modern static website for The Spice Table, a contemporary Indian restaurant in Nagpur, Maharashtra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
