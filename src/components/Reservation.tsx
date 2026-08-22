@@ -204,7 +204,7 @@ export const Reservation: React.FC = () => {
                     <input
                       id="res-phone"
                       type="tel"
-                      placeholder="e.g. 9876543210"
+                      placeholder="e.g. 8788325718"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className={`w-full pl-10 pr-4 py-3 text-sm bg-[#FAF7F2] border rounded-xl focus:outline-none focus:bg-white text-[#1F1D1A] ${
