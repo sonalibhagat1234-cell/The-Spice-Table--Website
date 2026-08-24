@@ -43,7 +43,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
                 We do not sell, distribute, or share personal contact numbers or emails with third-party advertising brokers.
               </p>
               <p>
-                For questions regarding demo data or website customization for restaurant businesses, contact <code>hello@thespicetable.com</code>.
+                For questions regarding demo data or website customization for restaurant businesses, contact <code>sonali.aiautomation@gmail.com</code>.
               </p>
             </>
           ) : (

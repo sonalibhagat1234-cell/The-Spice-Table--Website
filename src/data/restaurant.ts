@@ -11,7 +11,7 @@ export const restaurantInfo: RestaurantInfo = {
   phoneRaw: '+918788325718',
   whatsapp: '+91 87883 25718',
   whatsappRaw: '918788325718',
-  email: 'hello@thespicetable.com',
+  email: 'sonali.aiautomation@gmail.com',
   hours: '11:00 AM – 11:00 PM',
   days: 'Monday – Sunday',
   googleRating: 4.8,
