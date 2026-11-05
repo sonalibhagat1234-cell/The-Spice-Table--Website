@@ -51,13 +51,12 @@ export const LocationContact: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-serif text-lg font-bold text-[#1F1D1A]">Phone & Table Booking</h3>
-                <a
-                  href={`tel:${restaurantInfo.phoneRaw}`}
-                  className="text-xs sm:text-sm font-semibold text-[#1F1D1A] hover:text-[#C85A32] transition-colors block mt-1"
+                <span
+                  className="text-xs sm:text-sm font-semibold text-[#1F1D1A] block mt-1"
                 >
                   {restaurantInfo.phone}
-                </a>
-                <span className="text-[11px] text-[#7A736C]">Available 10:00 AM – 11:30 PM</span>
+                </span>
+                <span className="text-[11px] text-[#7A736C]">Portfolio demonstration only</span>
               </div>
             </div>
 

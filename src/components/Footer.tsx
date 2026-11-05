@@ -102,11 +102,11 @@ export const Footer: React.FC = () => {
                 <MapPin className="w-4 h-4 text-[#C85A32] shrink-0 mt-0.5" />
                 <span>{restaurantInfo.fullAddress}</span>
               </li>
-              <li className="flex items-center space-x-2.5">
-                <Phone className="w-4 h-4 text-[#C85A32] shrink-0" />
-                <a href={`tel:${restaurantInfo.phoneRaw}`} className="hover:text-white transition-colors">
+              <li className="flex items-start space-x-2.5">
+                <Phone className="w-4 h-4 text-[#C85A32] shrink-0 mt-0.5" />
+                <span className="text-neutral-300">
                   {restaurantInfo.phone}
-                </a>
+                </span>
               </li>
               <li className="flex items-center space-x-2.5">
                 <Mail className="w-4 h-4 text-[#C85A32] shrink-0" />
@@ -136,6 +136,13 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
+        </div>
+
+        {/* Portfolio Disclaimer */}
+        <div className="py-6 border-b border-white/10 text-center">
+          <p className="text-xs text-neutral-400 font-light max-w-2xl mx-auto leading-relaxed">
+            “This is a demonstration website created for portfolio purposes. The restaurant and contact information are fictional placeholders.”
+          </p>
         </div>
 
         {/* Bottom Bar */}

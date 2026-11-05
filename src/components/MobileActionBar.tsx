@@ -21,27 +21,23 @@ export const MobileActionBar: React.FC<MobileActionBarProps> = ({ onOpenReservat
       className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#E8E0D5] px-3 py-2 shadow-2xl lg:hidden"
     >
       <div className="grid grid-cols-4 gap-1.5 max-w-md mx-auto">
-        {/* Call */}
-        <a
+        {/* Call (Demo - Non-clickable) */}
+        <div
           id="mobile-bar-call"
-          href={`tel:${restaurantInfo.phoneRaw}`}
-          className="flex flex-col items-center justify-center py-1.5 px-1 rounded-xl text-[#1F1D1A] hover:bg-[#FAF7F2] active:bg-[#F3ECE1] transition-colors"
+          className="flex flex-col items-center justify-center py-1.5 px-1 rounded-xl text-[#7A736C] opacity-70 select-none"
         >
-          <Phone className="w-4 h-4 text-[#C85A32] mb-0.5" />
-          <span className="text-[10px] font-semibold tracking-tight">Call</span>
-        </a>
+          <Phone className="w-4 h-4 text-[#7A736C] mb-0.5" />
+          <span className="text-[9px] font-medium tracking-tight text-center leading-none">Demo Contact</span>
+        </div>
 
-        {/* WhatsApp */}
-        <a
+        {/* WhatsApp (Demo - Non-clickable) */}
+        <div
           id="mobile-bar-whatsapp"
-          href={`https://wa.me/${restaurantInfo.whatsappRaw}?text=Hi%20The%20Spice%20Table,%20I%20have%20an%20enquiry.`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-col items-center justify-center py-1.5 px-1 rounded-xl text-[#1F1D1A] hover:bg-[#FAF7F2] active:bg-[#F3ECE1] transition-colors"
+          className="flex flex-col items-center justify-center py-1.5 px-1 rounded-xl text-[#7A736C] opacity-70 select-none"
         >
-          <MessageCircle className="w-4 h-4 text-emerald-600 mb-0.5" />
-          <span className="text-[10px] font-semibold tracking-tight">WhatsApp</span>
-        </a>
+          <MessageCircle className="w-4 h-4 text-[#7A736C] mb-0.5" />
+          <span className="text-[9px] font-medium tracking-tight text-center leading-none">Demo Only</span>
+        </div>
 
         {/* Menu */}
         <button

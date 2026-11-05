@@ -123,16 +123,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation }) => {
 
         {/* Right Action CTA */}
         <div className="hidden lg:flex items-center space-x-4">
-          <a
-            id="navbar-phone-link"
-            href={`tel:${restaurantInfo.phoneRaw}`}
-            className={`flex items-center text-xs font-medium space-x-1.5 transition-colors ${
-              isScrolled ? 'text-[#4A4642] hover:text-[#C85A32]' : 'text-white/90 hover:text-white'
+          <span
+            id="navbar-phone-text"
+            className={`flex items-center text-xs font-medium space-x-1.5 ${
+              isScrolled ? 'text-[#4A4642]' : 'text-white/90'
             }`}
           >
             <Phone className="w-3.5 h-3.5 text-[#C85A32]" />
             <span>{restaurantInfo.phone}</span>
-          </a>
+          </span>
 
           <button
             id="navbar-reserve-btn"
@@ -209,17 +208,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation }) => {
                 Reserve a Table
               </button>
 
-              <div className="flex items-center justify-between text-xs text-[#4A4642] px-2 pt-2">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-[#4A4642] px-2 pt-2 gap-1">
                 <span className="flex items-center">
                   <Utensils className="w-3.5 h-3.5 mr-1 text-[#C85A32]" />
                   11:00 AM – 11:00 PM
                 </span>
-                <a
-                  href={`tel:${restaurantInfo.phoneRaw}`}
-                  className="font-medium text-[#C85A32] hover:underline"
-                >
+                <span className="font-medium text-[#C85A32]">
                   {restaurantInfo.phone}
-                </a>
+                </span>
               </div>
             </div>
           </div>

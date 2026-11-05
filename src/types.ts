@@ -64,6 +64,11 @@ export interface ReservationFormData {
   specialRequest?: string;
 }
 
+export interface ConfirmedReservation extends ReservationFormData {
+  reservationId: string;
+  status: 'Pending';
+}
+
 export interface RestaurantInfo {
   name: string;
   tagline: string;
